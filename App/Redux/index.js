@@ -8,6 +8,7 @@ export default () => {
   /* ------------- Assemble The Reducers ------------- */
   const rootReducer = combineReducers({
     startup: require('./StartupRedux').reducer,
+    content: require('./ContentRedux').reducer
     //login: require('./LoginRedux').reducer
   })
 

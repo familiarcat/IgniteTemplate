@@ -40,7 +40,6 @@ export default (rootReducer, rootSaga) => {
   // if (ReduxPersist.active) {
   //   enhancers.push(autoRehydrate())
   // }
-
   // in dev mode, we'll create the store through Reactotron
   const createAppropriateStore = createStore //__DEV__ ? console.tron.createStore : createStore
   const store = createAppropriateStore(rootReducer, compose(...enhancers))

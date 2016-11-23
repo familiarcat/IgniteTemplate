@@ -33,6 +33,7 @@ module.exports = {
         },
       },
       { test: /\.less$/, loader: 'style!css!autoprefixer?browsers=last 2 version!less' },
+      { test: /\.json$/, loader: 'json' }
     ],
   },
   plugins: [

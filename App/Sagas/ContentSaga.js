@@ -11,23 +11,19 @@
 *************************************************************/
 
 import { call, put } from 'redux-saga/effects'
-import StartupActions from '../Redux/StartupRedux'
+import ContentActions from '../Redux/ContentRedux'
 
-export function * getPlatform(action) {
-  yield put(StartupActions.getPlatform())
-}
-
-export function * startup (api, action) {
+export function * getContent (api, action) {
   const { data } = action
   // make the call to the api
-  const response = yield call(api.getStartup, data)
+  const response = yield call(api.getContent, data)
 
   // success?
   if (response.ok) {
     // You might need to change the response here - do this with a 'transform',
     // located in ../Transforms/. Otherwise, just pass the data back from the api.
-    yield put(StartupActions.startupSuccess(response.data))
+    yield put(ContentActions.contentSuccess(response.data))
   } else {
-    yield put(StartupActions.startupFailure())
+    yield put(ContentActions.contentFailure())
   }
 }

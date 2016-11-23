@@ -1,5 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
+
 // dumb components
 // import Header     from 'Header';
 // import HelloWorld from 'HelloWorld';

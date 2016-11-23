@@ -5,6 +5,7 @@ import { View, StatusBar, Text } from 'react-native'
 //import NavigationRouter from 'NavigationRouter'
 import { connect } from 'react-redux'
 
+
 // Styles
 import styles from './Styles/RootContainerStyle'
 

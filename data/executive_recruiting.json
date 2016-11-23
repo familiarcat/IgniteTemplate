@@ -1,0 +1,25 @@
+{
+    "sections": [
+        {
+            "title": "Company Overview",
+            "pages": [
+                {
+                    "number": 1,
+                    "template": "sidebar",
+                    "columns": [
+                        {
+                            "type": "body",
+                            "headline": "Combining world-class capabilities with a local practice model",
+                            "body": "<span>Long-term consultant employees with deep business acumen and leadership abilities Providing more experienced consultants & leading methods/techniques/tools to:</span> <ul><li>Accelerate results and productivity</li><li>Provide greater team continuity</li>More sustainable/cost effective pricepoint.</li></ul>"
+                        },
+                        {
+                            "type": "sidebar",
+                            "headline": "9 Business Units",
+                            "body": "<ul><li><ATLANTA</li><li>CHICAGO</li><li>DALLAS</li><li>DENVER</li><li>MINNEAPOLIS</li><li>NEWYORK</li><li>SAINTLOUIS(HQ)</li><li>DEVELOPMENTCENTER</li><li>SUPPORT&HARDWARECENTER</li>"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

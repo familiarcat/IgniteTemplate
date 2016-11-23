@@ -1,4 +1,5 @@
 import { takeLatest } from 'redux-saga'
+import ContentApi from '../Services/Content'
 // import API from '../Services/Api'
 // import SlideShowApi from '../Services/SlideShowApi'
 // import FixtureAPI from '../Services/FixtureApi'
@@ -15,7 +16,8 @@ import { StartupTypes } from '../Redux/StartupRedux'
 
 /* ------------- Sagas ------------- */
 
-// import { startup } from './StartupSaga'
+//import { startup } from './StartupSaga'
+import { getPlatform } from './StartupSaga'
 // import { login } from './LoginSagas'
 // import { getTemperature } from './TemperatureSagas'
 // import { listSlideShows, getSlideShow, updateSlideShow } from './SlideShowSagas'
@@ -34,6 +36,7 @@ import { StartupTypes } from '../Redux/StartupRedux'
 export default function * root () {
   yield [
     // some sagas only receive an action
-    
+    //getContent()
+    getPlatform()
   ]
 }

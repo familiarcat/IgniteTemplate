@@ -4,13 +4,12 @@ import Immutable from 'seamless-immutable'
 /* ------------- Types and Action Creators ------------- */
 
 const { Types, Creators } = createActions({
-  startupRequest: ['data'],
-  startupSuccess: ['payload'],
-  startupFailure: null,
-  getPlatform: null
+  contentRequest: ['data'],
+  contentSuccess: ['payload'],
+  contentFailure: null
 })
 
-export const StartupTypes = Types
+export const ContentTypes = Types
 export default Creators
 
 /* ------------- Initial State ------------- */
@@ -19,8 +18,7 @@ export const INITIAL_STATE = Immutable({
   data: null,
   fetching: null,
   payload: null,
-  error: null,
-  platform: null
+  error: null
 })
 
 /* ------------- Reducers ------------- */
@@ -39,22 +37,10 @@ export const success = (state, action) => {
 export const failure = state =>
   state.merge({ fetching: false, error: true, payload: null })
 
-// Check if we are in a browser by the Window class name
-
-export const getPlatform = state => {
-  console.log("getting platform")
-  return state.merge({platform: window.constructor.name == "Window" ? "web" : "native"})
-}
-  
-
-
-
-
 /* ------------- Hookup Reducers To Types ------------- */
 
 export const reducer = createReducer(INITIAL_STATE, {
-  [Types.STARTUP_REQUEST]: request,
-  [Types.STARTUP_SUCCESS]: success,
-  [Types.STARTUP_FAILURE]: failure,
-  [Types.GET_PLATFORM]: getPlatform,
+  [Types.CONTENT_REQUEST]: request,
+  [Types.CONTENT_SUCCESS]: success,
+  [Types.CONTENT_FAILURE]: failure
 })

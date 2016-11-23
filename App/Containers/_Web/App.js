@@ -1,7 +1,8 @@
-import React, { Component } from 'react';
-import { Provider }  from 'react-redux';
-import RootContainer from './RootContainer';
+import React, { Component } from 'react'
+import { Provider }  from 'react-redux'
+import RootContainer from './RootContainer'
 import createStore from '../../Redux'
+import applyConfigSettings from '../../Config/_Web'
 
 const store = createStore()
 
