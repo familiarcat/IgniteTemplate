@@ -3,4 +3,4 @@ import { render } from 'react-dom'
 import App from './App/Containers/_Web/App'
 
 const rootElement = document.getElementById('root')
-render( <App />, rootElement);
+render(<App />, rootElement)

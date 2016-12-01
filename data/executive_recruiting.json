@@ -2,6 +2,7 @@
     "sections": [
         {
             "title": "Company Overview",
+            "backgroundImage": "coverPageBg",
             "pages": [
                 {
                     "number": 1,
@@ -10,12 +11,22 @@
                         {
                             "type": "body",
                             "headline": "Combining world-class capabilities with a local practice model",
-                            "body": "<span>Long-term consultant employees with deep business acumen and leadership abilities Providing more experienced consultants & leading methods/techniques/tools to:</span> <ul><li>Accelerate results and productivity</li><li>Provide greater team continuity</li>More sustainable/cost effective pricepoint.</li></ul>"
+                            "body": "<div><span>Long-term consultant employees with deep business acumen and leadership abilities Providing more experienced consultants & leading methods/techniques/tools to:</span> <ul><li>Accelerate results and productivity</li><li>Provide greater team continuity</li>More sustainable/cost effective pricepoint.</li></ul></div>"
                         },
                         {
                             "type": "sidebar",
                             "headline": "9 Business Units",
-                            "body": "<ul><li><ATLANTA</li><li>CHICAGO</li><li>DALLAS</li><li>DENVER</li><li>MINNEAPOLIS</li><li>NEWYORK</li><li>SAINTLOUIS(HQ)</li><li>DEVELOPMENTCENTER</li><li>SUPPORT&HARDWARECENTER</li>"
+                            "body":"<div> <ul><li>ATLANTA</li><li>CHICAGO</li><li>DALLAS</li><li>DENVER</li><li>MINNEAPOLIS</li><li>NEWYORK</li><li>SAINTLOUIS(HQ)</li><li>DEVELOPMENTCENTER</li><li>SUPPORT&HARDWARECENTER</li></div>"
+                        }
+                    ]
+                },
+                {
+                    "number": 2,
+                    "template" : "sidebar",
+                    "columns": [
+                        {
+                            "type": "body",
+                            "body": "<div><h1>Collaborative</h1><p>Co-staffed teams, project services, resource pools, collaborative managed services</p><h1>Pragmatic</h1><p>Pragmatic, co-staffed approach well suited to building internal competency while getting key project initiatives completed</p><h1>Flexible</h1><p>Flexible engagement model</p><h1>Alternative</h1><p>Strong Alternative to the Global Consultancies</p></div>"
                         }
                     ]
                 }

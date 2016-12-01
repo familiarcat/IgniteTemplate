@@ -1,10 +1,14 @@
+// @flow
+
 // leave off @2x/@3x
 const images = {
-  logo: require('../Images/ir.png'),
-  clearLogo: require('../Images/top_logo.png'),
-  ignite: require('../Images/ignite_logo.png'),
+  bg: require('../Images/BG.png'),
+  igniteLogo: require('../Images/ignite_logo.png'),
+  ir: require('../Images/ir.png'),
   tileBg: require('../Images/tile_bg.png'),
-  background: require('../Images/BG.png')
+  coverPageBg: require('../Images/coverPageBg.png'),
+  topLogo: require('../Images/top_logo.png'),
+  
 }
 
 export default images

@@ -4,6 +4,7 @@ import Immutable from 'seamless-immutable'
 /* ------------- Types and Action Creators ------------- */
 
 const { Types, Creators } = createActions({
+  startup: null,
   startupRequest: ['data'],
   startupSuccess: ['payload'],
   startupFailure: null,
@@ -42,13 +43,9 @@ export const failure = state =>
 // Check if we are in a browser by the Window class name
 
 export const getPlatform = state => {
-  console.log("getting platform")
-  return state.merge({platform: window.constructor.name == "Window" ? "web" : "native"})
+  console.log('getting platform')
+  return state.merge({platform: window.constructor.name == 'Window' ? 'web' : 'native'})
 }
-  
-
-
-
 
 /* ------------- Hookup Reducers To Types ------------- */
 
@@ -56,5 +53,5 @@ export const reducer = createReducer(INITIAL_STATE, {
   [Types.STARTUP_REQUEST]: request,
   [Types.STARTUP_SUCCESS]: success,
   [Types.STARTUP_FAILURE]: failure,
-  [Types.GET_PLATFORM]: getPlatform,
+  [Types.GET_PLATFORM]: getPlatform
 })

@@ -4,6 +4,8 @@ const height = 768
 
 // Used via Metrics.baseMargin
 const metrics = {
+  width: width,
+  height: height,
   marginHorizontal: 10,
   marginVertical: 10,
   section: 25,
@@ -13,7 +15,7 @@ const metrics = {
   horizontalLineHeight: 1,
   screenWidth: width < height ? width : height,
   screenHeight: width < height ? height : width,
-  navBarHeight: (Platform.OS === 'ios') ? 64 : 54,
+  navBarHeight: 54,
   buttonRadius: 4,
   icons: {
     tiny: 15,

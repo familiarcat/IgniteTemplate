@@ -8,6 +8,7 @@ import ContentApi from '../Services/Content'
 /* ------------- Types ------------- */
 
 import { StartupTypes } from '../Redux/StartupRedux'
+import { ContentTypes } from '../Redux/ContentRedux'
 // import { TemperatureTypes } from '../Redux/TemperatureRedux'
 // import { LoginTypes } from '../Redux/LoginRedux'
 // import { SlideShowTypes } from '../Redux/SlideShowRedux'
@@ -16,8 +17,8 @@ import { StartupTypes } from '../Redux/StartupRedux'
 
 /* ------------- Sagas ------------- */
 
-//import { startup } from './StartupSaga'
-import { getPlatform } from './StartupSaga'
+import { startup } from './StartupSaga'
+import { getContent } from './ContentSaga'
 // import { login } from './LoginSagas'
 // import { getTemperature } from './TemperatureSagas'
 // import { listSlideShows, getSlideShow, updateSlideShow } from './SlideShowSagas'
@@ -34,9 +35,11 @@ import { getPlatform } from './StartupSaga'
 /* ------------- Connect Types To Sagas ------------- */
 
 export default function * root () {
+  console.log("////// CONTENT API", ContentApi)
   yield [
     // some sagas only receive an action
-    //getContent()
-    getPlatform()
+    takeLatest(StartupTypes.STARTUP, startup),
+    takeLatest(ContentTypes.CONTENT_REQUEST, getContent, ContentApi),
+    //getPlatform()
   ]
 }

@@ -15,13 +15,10 @@ import ContentActions from '../Redux/ContentRedux'
 
 export function * getContent (api, action) {
   const { data } = action
-  // make the call to the api
+  console.log("gettingContent from Saga", data)
   const response = yield call(api.getContent, data)
-
-  // success?
+  console.log("response:", response)
   if (response.ok) {
-    // You might need to change the response here - do this with a 'transform',
-    // located in ../Transforms/. Otherwise, just pass the data back from the api.
     yield put(ContentActions.contentSuccess(response.data))
   } else {
     yield put(ContentActions.contentFailure())

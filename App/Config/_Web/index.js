@@ -1,5 +1,6 @@
-import DebugSettings from "../DebugSettings"
+import AppConfig from "./AppConfig"
 
-export default  {
-    debug: true
+export default () => {
+  global.__DEV__ = false
+  global.__WEB__ = true
 }
