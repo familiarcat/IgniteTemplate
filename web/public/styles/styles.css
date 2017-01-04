@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'OpenSans-Semibold';
+    src: url('fonts/OpenSans-Semibold.ttf');
+}
+@font-face {
+    font-family: 'OpenSans-Bold';
+    src: url('fonts/OpenSans-Bold.ttf');
+}
+@font-face {
+    font-family: 'OpenSans-Light';
+    src: url('fonts/OpenSans-Light.ttf');
+}
+@font-face {
+    font-family: 'MinionPro-Regular';
+    src: url('fonts/MinionPro-Regular.ttf');
+}
+.carousel-indicators li {
+    background-color: rgba(160,160,160,1);
+    border:0px;
+}
+
+.carousel-control.left {
+    background-image: linear-gradient(to right,rgba(0,0,0,.25) 0,rgba(0,0,0,.0001) 100%);
+}
+
+.carousel-control.right {
+    background-image: linear-gradient(to left,rgba(0,0,0,.25) 0,rgba(0,0,0,.0001) 100%);
+}
+
+.carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev {
+    left: 10%;
+}
+
+.carousel-control .glyphicon-chevron-right, .carousel-control .icon-prev {
+    right: 10%;
+}

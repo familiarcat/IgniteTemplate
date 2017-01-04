@@ -15,9 +15,7 @@ import ContentActions from '../Redux/ContentRedux'
 
 export function * getContent (api, action) {
   const { data } = action
-  console.log("gettingContent from Saga", data)
   const response = yield call(api.getContent, data)
-  console.log("response:", response)
   if (response.ok) {
     yield put(ContentActions.contentSuccess(response.data))
   } else {

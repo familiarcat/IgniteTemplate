@@ -7,7 +7,6 @@ import R from 'ramda'
 // creates the store
 export default (rootReducer, rootSaga) => {
   /* ------------- Redux Configuration ------------- */
-  console.log("///2//// creating store", __DEV__)
   const middleware = []
   const enhancers = []
 
@@ -61,7 +60,6 @@ export default (rootReducer, rootSaga) => {
   // }
   if (module.hot) {
     // Enable Webpack hot module replacement for reducers
-    console.log("enabling reducer hot reloading")
     module.hot.accept('../Redux', () => {
       const nextRootReducer = require('../Redux/index')
       store.replaceReducer(nextRootReducer)

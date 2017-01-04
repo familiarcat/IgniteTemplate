@@ -17,17 +17,14 @@ class CoverPage extends React.Component {
                 {
                     this.props.data.backgroundImage ? <Image source={Images[this.props.data.backgroundImage]} style={styles.backgroundImage}/> : null
                 }
-                {
-                    console.debug("cover page bg image?", Images[this.props.data.backgroundImage])
-                }
-                <Text>{this.props.data.title ? this.props.data.title : null}</Text>
+                <Text style={styles.title}>{this.props.data.title ? this.props.data.title : null}</Text>
             </View>
         )
     }
 }
 
 CoverPage.propTypes = {
-    title: React.PropTypes.string
+    data: React.PropTypes.object
 }
 
 

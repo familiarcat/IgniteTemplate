@@ -13,17 +13,63 @@ const ApplicationStyles = {
       overflow: "hidden"
     },
     backgroundImage: {
-      position: 'absolute',
-      top: 0,
-      left: 0,
-      bottom: 0,
-      right: 0,
+      position: 'relative',
+      zIndex: -10,
       width: 1024,
       height: 768
     },
+    sidebar: {
+      position: "absolute",
+      zIndex: 3,
+      top: 250,
+      padding: 20,
+      paddingBottom: 60,
+      left: ((Metrics.width / 3) * 1.5),
+      width: 250,
+      height: 525,
+      backgroundColor: Colors.snow,
+      boxShadow: "4px 4px 5px 1px rgba(0,0,0,0.4)"
+    },
     container: {
-      flex: 1,
       paddingTop: Metrics.baseMargin
+    },
+    sideBarImage: {
+        position: "absolute",
+        zIndex: 1
+    },
+    backgroundImageContainer: {
+        width: 690,
+        height: 768,
+        overflow: "hidden",
+        float: "left",
+        zIndex: 1
+    },
+    pageTitle: {
+      position:"absolute",
+      float:"left",
+      left: 50,
+      top: 50,
+      ...Fonts.style.h3
+    },
+    fullPageImageContainer: {
+        position:"absolute",
+        top:100,
+        width:1024,
+        overflow: "hidden"
+    },
+    fullPageImage: {
+      display:"block",
+      marginLeft:"auto",
+      marginRight:"auto"
+    },
+    footerImageContainer: {
+        bottom:0,
+        height:768,
+        overflow:"hidden"
+    },
+    footerImage: {
+      position:"fixed",
+      bottom: 0
     },
     section: {
       margin: Metrics.section,

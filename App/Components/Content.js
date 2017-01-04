@@ -15,18 +15,20 @@ import styles from './Styles/HomeStyle'
 class Content extends React.Component {
   renderSections() {
     return this.props.data.sections.map((section, index) => {
-      console.debug("section:", section)
       return <Section key={index} data={section} />
     })
   }
   render() {
     return (
-      <View style={styles.container}>
+      <View style={styles.mainContainer}>
         {this.props.data ? this.renderSections() : null}
       </View>
     )
   }
+}
 
+Content.propTypes = {
+    data: React.PropTypes.object
 }
 
 

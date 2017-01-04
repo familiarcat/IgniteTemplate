@@ -7,26 +7,297 @@
                 {
                     "number": 1,
                     "template": "sidebar",
+                    "backgroundImage": "pageBg",
+                    "images": {
+                        "sideBarImage": "world"
+                    },
                     "columns": [
                         {
-                            "type": "body",
-                            "headline": "Combining world-class capabilities with a local practice model",
-                            "body": "<div><span>Long-term consultant employees with deep business acumen and leadership abilities Providing more experienced consultants & leading methods/techniques/tools to:</span> <ul><li>Accelerate results and productivity</li><li>Provide greater team continuity</li>More sustainable/cost effective pricepoint.</li></ul></div>"
+                            "style": "body",
+                            "body": "<div><h3>Combining world-class capabilities with a local practice model</h3><p>Long-term consultant employees with deep business acumen and leadership abilities</p><p>Providing more experienced consultants & leading methods/techniques/tools to:</p><p>\u2022 Accelerate results and productivity</p><p>\u2022 Provide greater team continuity</p><p>\u2022 More sustainable/cost effective pricepoint.</p></div>"
                         },
                         {
-                            "type": "sidebar",
-                            "headline": "9 Business Units",
-                            "body":"<div> <ul><li>ATLANTA</li><li>CHICAGO</li><li>DALLAS</li><li>DENVER</li><li>MINNEAPOLIS</li><li>NEWYORK</li><li>SAINTLOUIS(HQ)</li><li>DEVELOPMENTCENTER</li><li>SUPPORT&HARDWARECENTER</li></div>"
+                            "style": "sidebar",
+                            "body": "<div><h3>9 Business Units</h3><h5>ATLANTA</h5><h5>CHICAGO</h5><h5>DALLAS</h5><h5>DENVER</h5><h5>MINNEAPOLIS</h5><h5>NEW YORK</h5><h5>SAINT LOUIS (HQ)</h5><h5>DEVELOPMENT CENTER</h5><h5>SUPPORT & HARDWARE CENTER</h5></div>"
                         }
                     ]
                 },
                 {
                     "number": 2,
-                    "template" : "sidebar",
+                    "template": "sidebar",
+                    "backgroundImage": "pageBg",
+                    "images": {
+                        "sideBarImage": "coffeehouse"
+                    },
                     "columns": [
                         {
-                            "type": "body",
-                            "body": "<div><h1>Collaborative</h1><p>Co-staffed teams, project services, resource pools, collaborative managed services</p><h1>Pragmatic</h1><p>Pragmatic, co-staffed approach well suited to building internal competency while getting key project initiatives completed</p><h1>Flexible</h1><p>Flexible engagement model</p><h1>Alternative</h1><p>Strong Alternative to the Global Consultancies</p></div>"
+                            "style": "body",
+                            "body": "<div><h3>Collaborative</h3><p>Co-staffed teams, project services, resource pools, collaborative managed services</p><h3>Pragmatic</h3><p>Pragmatic, co-staffed approach well suited to building internal competency while getting key project initiatives completed</p><h3>Flexible</h3><p>Flexible engagement model</p><h3>Alternative</h3><p>Strong Alternative to the Global Consultancies</p></div>"
+                        },
+                        {
+                            "style": "sidebar",
+                            "body": "<div><h3>By the Numbers</h3><p><span>Over <b>1000 employees </b>from Management Consultants to Developers</span></p><p><span>Engagements with nearly 75 <b>Fortune 500 industry leaders </b>over the past 5 years</span></p><p><span>88% of our clients are long-term, repeat/referral relationships of 10+ years</span></p><p><span>Demonstrated <b>30 year track record </b>of delivering mission critical initiatives enabled by emerging technologies</span></p></div>"
+                        }
+                    ]
+                },
+                {
+                    "number": 3,
+                    "title": "Working with the Largest Industry Leaders",
+                    "template": "fullPageImage",
+                    "backgroundImage": "pageFooter",
+                    "images": {
+                        "fullPageImage": "companies"
+                    }
+                },
+                {
+                    "number": 4,
+                    "title": "Primary Areas of Focus",
+                    "template": "threeColumn",
+                    "backgroundImage": "pageBg",
+                    "images": {
+                        "sideBarImage": "conference"
+                    },
+                    "columns": [
+                        {
+                            "style": "columnThree",
+                            "body": "<div><h4>Information Management</h4><p><span>\u2022 EIM Strategy & Roadmap</span></p><p><span>\u2022 Foundational Data Implementation/Integration</span></p><p><span>\u2022 IM Competency Development</span></p><p><span>\u2022 Big Data</span></p><p><span>\u2022 Business Analytics and Insights</span></p></div>"
+                        },
+                        {
+                            "style": "columnThree",
+                            "body": "<div><h4>Mobile / IoT Applications</h4><p><span>\u2022 Opportunity Assessments</span></p><p><span>\u2022 Mobile Roadmaps</span></p><p><span>\u2022 Business Application</span></p><p><span>\u2022 Technology Platform</span></p><p><span>\u2022 Rapid Mobile Application Development</span></p><p><span>\u2022 COE Start-Up</span></p></div>"
+                        },
+                        {
+                            "style": "columnThree",
+                            "body": "<div><h4>Digital Engagement</h4><p><span>\u2022 Planning & Application Development</span></p><p><span>\u2022 Omni Channel Maturity Assessment & Roadmap</span></p><p><span>\u2022 Social Analytics</span></p><p><span>\u2022 Flexible Fulfillment</span></p></div>"
+                        }
+                    ]
+                },
+                {
+                    "number": 5,
+                    "title": "Foundational Competencies",
+                    "template": "threeColumn",
+                    "backgroundImage": "pageBg",
+                    "images": {
+                        "sideBarImage": "reading"
+                    },
+                    "columns": [
+                        {
+                            "style": "columnThree",
+                            "body": "<div><h4>Application Development</h4><p><span>\u2022 Rapid Application Design & Development</span></p><p><span>\u2022 Solution Architecture</span></p><p><span>\u2022 Agile, DevOps, ERM Optimization / Adoption</span></p><p><span>\u2022 Architecture Planning</span></p><p><span>\u2022 Technology Selection & Integration</span></p></div>"
+                        },
+                        {
+                            "style": "columnThree",
+                            "body": "<div><h4>Business Analysis Process & Workforce Change</h4><p><span>\u2022 Requirements Definition</span></p><p><span>\u2022 User Experience Design</span></p><p><span>\u2022 Process Optimization</span></p><p><span>\u2022 Business Architecture</span></p><p><span>\u2022 Change Planning & Management</span></p></div>"
+                        },
+                        {
+                            "style": "columnThree",
+                            "body": "<div><h4>Program & Project Management</h4><p><span>\u2022 Program & Project Planning</span></p><p><span>\u2022 Program & Project Management</span></p><p><span>\u2022 Business Case Development</span></p><p><span>\u2022 PMO Optimization</span></p><p><span>\u2022 M&A Integration</span></p></div>"
+                        }
+                    ]
+                },
+                {
+                    "number": 6,
+                    "title": "Strategy",
+                    "template": "threeColumn",
+                    "backgroundImage": "pageBg",
+                    "images": {
+                        "sideBarImage": "group"
+                    },
+                    "columns": [
+                        {
+                            "style": "columnThree",
+                            "body": "<div><h4>Business Solutions & Advisory</h4><p><span>\u2022 Business Strategy & Alignment</span></p><p><span>\u2022 Specific Business Strategy/ Roadmaps –  For Example:</span></p><p><span>    \u2022 Full Closed-Loop Sales Execution</span></p><p><span>    \u2022 Customer Segmentation</span></p><p><span>    \u2022 Go-to-Market Strategies</span></p><p><span>    \u2022 Minimizing Production Downtime</span></p></div>"
+                        },
+                        {
+                            "style": "columnThree",
+                            "body": "<div><h4>Innovation to Results</h4><p><span>\u2022 Innovation Planning</span></p><p><span>\u2022 Identifying Business Solutions</span></p><p><span>\u2022 Start-Up Evaluations</span></p><p><span>\u2022 Agile Enterprise</span></p><p><span>\u2022 Monetization Strategies</span></p></div>"
+                        },
+                        {
+                            "style": "columnThree",
+                            "body": "<div><h4>Optimizing IT</h4><p><span>\u2022 IT Strategy & Planning</span></p><p><span>\u2022 Project Portfolio Planning</span></p><p><span>\u2022 Application / Asset Portfolio Planning</span></p><p><span>\u2022 Maturity development plans</span></p><p><span>\u2022 Cloud Computing Strategies</span></p><p><span>\u2022 IT Execution Effectiveness</span></p><p><span>\u2022 IT Sourcing Strategy</span></p></div>"
+                        }
+                    ]
+                },
+                {
+                    "number": 7,
+                    "template": "fullPageImage",
+                    "backgroundImage": "pageFooter",
+                    "images": {
+                        "fullPageImage": "engagement"
+                    },
+                    "columns": [
+                        {
+                            "style": "imageSidebar",
+                            "body": "<div><h3>How We Do IT… Engagement Models</h3><p><span>While most companies offer many approaches, Daugherty has intentionally designed alternative solutions to help companies to find the right fit for their needs.</span></p></div>"
+                        }
+                    ]
+                },
+                {
+                    "number": 8,
+                    "template": "twoColumn",
+                    "backgroundImage": "pageBg",
+                    "columns": [
+                        {
+                            "style": "body",
+                            "body": "<div><h4>Daugherty Advantage</h4><p>A unique combination of deep industry experience through a local practice model</p></div>"
+                        },
+                        {
+                            "style": "columnTwo",
+                            "body": "<div><h3>vs. Technology Providers, Niche and Staffing Firms</h3><p><span>\u2022 Able to understand the broader <b>business</b> and technical integration issues</span></p><p><span>\u2022 Solution <b>neutral</b> — we aren’t trying to sell a specific tool, technology, hardware, or service</span></p><p><span>\u2022 Able to actually <b>implement</b> through deep, industrial-strength experience</span></p><p><span>\u2022 Able to <b>leverage</b> point skills when, and as needed</span></p><p><span>\u2022 Able to take <b>accountability</b> for results</span></p><p><span>\u2022 Greater <b>capabilities</b> through proven methods, techniques, tools, &  pre-built components</span></p><p><span>\u2022 Able to rapidly deliver <b>proven</b>, reliable, <b>results</b> — not just a technical skill set</span></p><p><span>\u2022 Our consultants are long-term employees rewarded on client success</span></p><br><h3>vs. Global and Offshore Consulting Firms</h3><p><span>\u2022 Greater <b>technical</b> depth</span></p><p><span>\u2022 Able to rapidly respond with <b>proven</b>, reliable <b>results</b> — <b>higher quality</b> and <b>faster speed</b> than offshore firms</span></p><p><span>\u2022 <b>Sustainable</b> cost model—typically 25% to 40% <b>cost savings</b> and limited travel expense due to local delivery model</span></p><p><span>\u2022 More <b>pragmatic</b> results-focus provides more <b>rapid business results</b></span></p><p><span>\u2022 <b>Continuity</b> and experienced resources</b></span></p><p><span>\u2022 More <b>flexible</b> in providing services the way the client buys</b></span></p></div>"
+                        }
+                    ]
+                },
+                {
+                    "number": 9,
+                    "template": "twoColumn",
+                    "backgroundImage": "pageBg",
+                    "columns": [
+                        {
+                            "style": "body",
+                            "body": "<div><h4>Daugherty Timeline</h4><p>Throughout our history, our focus has been on delivering exceptional value to our clients while providing exceptional opportunities for our employees.</p></div>"
+                        },
+                        {
+                            "style": "columnTwo",
+                            "timeline": [
+                                {
+                                    "year": 1985,
+                                    "event": "Founded in St. Louis as Digital Systems Consultants by Ron & Jan Daugherty"
+                                },
+                                {
+                                    "year": 1990,
+                                    "event": "Opened Chicago Office"
+                                },
+                                {
+                                    "year": 1991,
+                                    "event": "Opened Atlanta Office"
+                                },
+                                {
+                                    "year": 1993,
+                                    "event": "Re-branded as Daugherty Systems with focus on delivering Project Services "
+                                },
+                                {
+                                    "year": 1998,
+                                    "event": "First mobile project"
+                                },
+                                {
+                                    "year": 1999,
+                                    "event": "Acquired WCS/Microvane distribution software product company"
+                                },
+                                {
+                                    "year": 2000,
+                                    "event": "Established 1st Dev Center"
+                                },
+                                {
+                                    "year": 2002,
+                                    "event": "RPM Rapid Process Map, Daugherty proprietary methodology for software development is trademarked"
+                                },
+                                {
+                                    "year": 2003,
+                                    "event": "Re-branded as Daugherty Business Solutions to reflect emphasis on delivering strategy, technology and innovation to Fortune 500"
+                                },
+                                {
+                                    "year": 2004,
+                                    "event": "Signed first application managed service agreement – still in place today"
+                                },
+                                {
+                                    "year": 2006,
+                                    "event": "Opened Minneapolis Office"
+                                },
+                                {
+                                    "year": 2011,
+                                    "event": "Established Enterprise Strategy Group"
+                                },
+                                {
+                                    "year": 2011,
+                                    "event": "Opened Dallas Office"
+                                },
+                                {
+                                    "year": 2011,
+                                    "event": "Launched Daugherty Mobile Suite"
+                                },
+                                {
+                                    "year": 2012,
+                                    "event": "Agile Transformation offering introduced"
+                                },
+                                {
+                                    "year": 2015,
+                                    "event": "30 year anniversary with 1000+ employees from Management Consultants to Developers"
+                                },
+                                {
+                                    "year": 2015,
+                                    "event": "Customer engagement and Business analytics COE established"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "number": 10,
+                    "template": "twoColumn",
+                    "backgroundImage": "pageBg",
+                    "images": {
+                        "sideBarImage": "partners"
+                    },
+                    "columns": [
+                        {
+                            "style": "body",
+                            "body": "<div><h4>Partnerships & Alliances</h4><p>Deep technology capabilities with a solution neutral, business-driven approach.</p></div>"
+                        }
+                    ]
+                },
+                {
+                    "number": 11,
+                    "template": "twoColumn",
+                    "backgroundImage": "pageBg",
+                    "columns": [
+                        {
+                            "style": "body",
+                            "body": "<div><h4>Client Testimonials</h4><p>What our clients say about us</p></div>"
+                        },
+                        {
+                            "style": "columnTwo",
+                            "testimonials": [
+                                {
+                                    "quote": "“Daugherty runs circles around you guys in the segmentation space.”",
+                                    "source": "- Executive explaining to competitor why Daugherty won CPG engagement."
+                                },
+                                {
+                                    "quote": "“Daugherty consultants are light years ahead of who we had been using.  We’ve had people trying to agree on this for three years and in a half day we finally have agreement.”",
+                                    "source": "- Client referring to Daugherty’s Approach"
+                                },
+                                {
+                                    "quote": "“They [business users] called us the ‘Ferrari Team’ because they had never seen such fast results. I recommended that another manager use your company.  I told him it would make his life easier.”",
+                                    "source": "- Project Manager for a major transportation company"
+                                },
+                                {
+                                    "quote": "“…You have raised the expectation bar really high!”",
+                                    "source": "- IT Manager referring to our custom application development work"
+                                },
+                                {
+                                    "quote": "“I want to thank each of you for your work in designing and implementing the new website…this took a great deal of effort and many long hours. It was a terrific team effort and I appreciate your contribution to making it happen.”",
+                                    "source": "- CEO and Owner of a regional hotel chain"
+                                },
+                                {
+                                    "quote": "“Congratulations on a flawless implementation! I wish all EDW implementations went as smoothly as this one.  The folks at Daugherty have been a pleasure to work with.”",
+                                    "source": "- IT Manager of Communications Company"
+                                },
+                                {
+                                    "quote": "“This performance is absolutely phenomenal!”",
+                                    "source": "- CTO if Communications Company referring to a Daugherty built Operational Data Store."
+                                },
+                                {
+                                    "quote": "“I found the Daugherty consultants to be highly skilled experts who stayed focused on the bottom line and who blended well with my team. Bottom line, I would recommend Daugherty without any reservations.”",
+                                    "source": "- Former financial executive for telecommunications company"
+                                },
+                                {
+                                    "quote": "“We want to congratulate the (Daugherty) team that successfully launched the new system. We usually don’t like consultants, but we like you guys. You work well with our people.”",
+                                    "source": "- CIO of global agriculture company"
+                                },
+                                {
+                                    "quote": "“Just wanted you to know how much I appreciate your team’s contribution and the professionalism they have demonstrated throughout this project. I have been particularly impressed with the oversight and governance.”",
+                                    "source": "- Director of IT, Store Operations for major home improvement retailer"
+                                }
+                            ]
                         }
                     ]
                 }

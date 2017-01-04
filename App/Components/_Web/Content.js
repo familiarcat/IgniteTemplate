@@ -6,7 +6,6 @@ class Content extends Component {
 
   renderSections() {
     return this.props.data.sections.map((section, index) => {
-      console.debug("section:", section)
       return <Section key={index} data={section} />
     })
   }

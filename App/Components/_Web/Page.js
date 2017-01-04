@@ -1,27 +1,26 @@
 import React, { Component, PropTypes } from 'react'
 import { Carousel } from "react-bootstrap"
-import { Parser } from 'html-to-react'
 import styles from './Styles/PageStyle'
+import { Images } from '../../Themes/_Web'
+import { SideBarTemplate, FullPageImageTemplate, ThreeColumnTemplate, TwoColumnTemplate } from "./PageTemplates"
 
-const htmlParser = new Parser()
+const templates = {
+    sidebar:SideBarTemplate,
+    fullPageImage:FullPageImageTemplate,
+    threeColumn:ThreeColumnTemplate,
+    twoColumn:TwoColumnTemplate
+}
 
 class Page extends Carousel.Item {
-    
-    renderColumns() {
-        return this.props.data.columns.map((column, index) => {
-            console.debug("rendering column", htmlParser)
-            let columnComponent = htmlParser.parse(column.body)
-            return (
-                <div key={index}>
-                    {columnComponent}
-                </div>
-            )
-        })
+
+    renderTemplate() {
+        let Template = templates[this.props.data.template]
+        return <Template {...this.props}/>
     }
     render() {
         return (
-            <div>
-                {this.props.data ? this.renderColumns() : null}
+            <div style={styles.page}>
+                {this.props.data.template ? this.renderTemplate() : null}
             </div>
         )
     }
@@ -31,5 +30,4 @@ Page.propTypes = {
     data: React.PropTypes.object
 }
 
-// Wrap the component to inject dispatch and state into it
 export default Page

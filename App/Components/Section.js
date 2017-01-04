@@ -17,12 +17,10 @@ import styles from './Styles/HomeStyle'
 class Section extends React.Component {
     renderPages() {
         return this.props.data.pages.map((page, index) => {
-            console.debug("page:", page)
             return <Page key={index} data={page} />
         })
     }
     render() {
-        console.debug('rendering section')
         return (
             <SwipeALot>
                 <CoverPage data={this.props.data}/>

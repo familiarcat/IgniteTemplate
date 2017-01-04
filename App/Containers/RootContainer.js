@@ -12,7 +12,7 @@ import Content from '../Components/Content'
 import styles from './Styles/RootContainerStyle'
 
 class RootContainer extends Component {
-  componentDidMount () {
+  componentDidMount() {
     this.props.startup()
     this.props.getContent()
     // if redux persist is not active fire startup action
@@ -21,26 +21,25 @@ class RootContainer extends Component {
     // }
   }
 
-  componentWillReceiveProps(newProps) {
-        console.log("// ROOT CONTAINER WILL RECEIVE PROPS", newProps)
-  }
-
-  render () {
+  render() {
     return (
-      <Content data={this.props.content} />
+      <View style={styles.container}>
+        <Content data={this.props.content} />
+        <StatusBar hidden={true} />
+      </View>
     )
   }
 }
 
 const mapStateToProps = (state) => {
-    return {
-        content: state.content.payload
-    }
+  return {
+    content: state.content.payload
+  }
 }
 
 const mapStateToDispatch = (dispatch) => ({
-   startup: () => dispatch(StartupActions.startup()),
-   getContent: () => dispatch(ContentActions.contentRequest("native"))
+  startup: () => dispatch(StartupActions.startup()),
+  getContent: () => dispatch(ContentActions.contentRequest("native"))
 })
 
 export default connect(mapStateToProps, mapStateToDispatch)(RootContainer)

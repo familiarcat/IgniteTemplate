@@ -9,7 +9,6 @@ import styles from './Styles/SectionStyle'
 class Section extends Component {
     renderPages() {
         return this.props.data.pages.map((page, index) => {
-            console.debug("page:", page)
             return <Carousel.Item key={index}>
                 <Page data={page} />
             </Carousel.Item>
@@ -17,7 +16,7 @@ class Section extends Component {
     }
     render() {
         return (
-            <Carousel interval={0}>
+            <Carousel interval={0} style={styles.mainContainer}>
                 <Carousel.Item>
                     <CoverPage data={this.props.data} />
                 </Carousel.Item>

@@ -43,7 +43,6 @@ export const failure = state =>
 // Check if we are in a browser by the Window class name
 
 export const getPlatform = state => {
-  console.log('getting platform')
   return state.merge({platform: window.constructor.name == 'Window' ? 'web' : 'native'})
 }
 

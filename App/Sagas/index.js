@@ -35,7 +35,6 @@ import { getContent } from './ContentSaga'
 /* ------------- Connect Types To Sagas ------------- */
 
 export default function * root () {
-  console.log("////// CONTENT API", ContentApi)
   yield [
     // some sagas only receive an action
     takeLatest(StartupTypes.STARTUP, startup),

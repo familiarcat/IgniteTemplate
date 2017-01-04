@@ -9,10 +9,11 @@ const metrics = {
   section: 25,
   baseMargin: 10,
   doubleBaseMargin: 20,
+  twoColumnMargin: 45,
   smallMargin: 5,
   horizontalLineHeight: 1,
-  screenWidth: width < height ? width : height,
-  screenHeight: width < height ? height : width,
+  screenWidth: width > height ? width : height,
+  screenHeight: width > height ? height : width,
   navBarHeight: (Platform.OS === 'ios') ? 64 : 54,
   buttonRadius: 4,
   icons: {
