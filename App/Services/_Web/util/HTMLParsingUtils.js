@@ -121,10 +121,6 @@ function traverseDom(node, isValidNode, index, styles, processingInstructions) {
                     switch (true) {
                         case node.name == s:
                             node.attribs.style = Object.assign({}, styles[s])
-                            if (s == "h3") {
-                                //console.debug("assigning style", styles[s])
-                                console.log("assigned styles:", node.attribs.style)
-                            }
                     }
                 }
 
@@ -173,7 +169,6 @@ function createElement(node, index, data, children) {
             let key = keyAndValue[0];
             let value = keyAndValue[1];
             key = camelCaseMap[key.replace(/[-:]/, '')] || key;
-            console.debug("key", keyAndValue)
             if (key === 'style' && typeof value === "Object") {
                 console.log("should apply style to key and value", keyAndValue)
                 value = value
@@ -181,7 +176,6 @@ function createElement(node, index, data, children) {
                 key = 'className';
             }
             result[key] = value || key;
-            console.debug("RESULT:", result)
             return result;
         }, elementProps, toPairs(node.attribs));
     }

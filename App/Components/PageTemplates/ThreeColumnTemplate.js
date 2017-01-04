@@ -14,6 +14,8 @@ class ThreeColumnTemplate extends Component {
     
     renderColumns() {
         return this.props.data.columns.map((column, index) => {
+            console.log("column style:", column.style)
+            
             return (
                 <View key={index} style={styles[column.style]}>
                     <HTMLView value={column.body} stylesheet={styles}/>

@@ -13,8 +13,8 @@ const ApplicationStyles = {
       overflow: "hidden"
     },
     backgroundImage: {
-      position: 'relative',
       zIndex: -10,
+      float:"left",
       width: 1024,
       height: 768
     },
@@ -35,7 +35,8 @@ const ApplicationStyles = {
     },
     sideBarImage: {
         position: "absolute",
-        zIndex: 1
+        left:640,
+        zIndex: 4
     },
     backgroundImageContainer: {
         width: 690,

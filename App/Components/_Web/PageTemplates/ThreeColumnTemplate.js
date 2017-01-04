@@ -17,6 +17,7 @@ class ThreeColumnTemplate extends Component {
     renderColumns() {
         return this.props.data.columns.map((column, index) => {
             let columnComponent = htmlParsingService.parse(column.body, styles);
+            console.debug("column style:", styles[column.style])
             return (
                 <div key={index} style={styles[column.style]}>
                     {columnComponent}
@@ -29,11 +30,11 @@ class ThreeColumnTemplate extends Component {
         return(
         <div style={styles.page} >
             {this.props.data.backgroundImage ? this.renderBackgroundImage() : null}
-            <div style={styles.threeColumnContainer}>
-                {this.props.data.columns ? this.renderColumns() : null}
-            </div>
             <div style={styles.pageTitleContainer}>
                 <span style={styles.pageTitle}>{this.props.data.title}</span>
+            </div>
+            <div style={styles.threeColumnContainer}>
+                {this.props.data.columns ? this.renderColumns() : null}
             </div>
             <div style={styles.sideBarImageContainer}>
                 {this.props.data.images ? this.renderSideBarImage() : null}

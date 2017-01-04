@@ -84,7 +84,6 @@ export default StyleSheet.create({
             width: 4
         }
     },
-    
     pageTitleContainer: {
         position: 'absolute',
         top: 0,
